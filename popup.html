@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Logger and Blocker</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 10px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    #logs {
+      max-height: 200px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Blacklist Patterns</h2>
+  <textarea id="blacklistPatterns" placeholder="Enter regex patterns (one per line)"></textarea>
+  <button id="savePatterns">Save Patterns</button>
+  
+  <h2>Visit Log</h2>
+  <div id="logs"></div>
+  <button id="clearLogs">Clear Logs</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
